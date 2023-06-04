@@ -1,0 +1,42 @@
+@use 'reset'
+@use 'variables'
+@use 'mixins'
+
+.todo
+  @include mixins.flex-center
+  @include mixins.container
+  flex-direction: column
+  gap: 1em
+
+  &-title
+    @include mixins.flex-center
+    background-color: variables.$bg-color
+    color: variables.$primary-color
+    min-width: 100%
+    min-height: 3em
+    font-size: 2rem
+  
+  &-list
+    background-color: variables.$secondary-color
+    font-size: 1.2rem
+    min-width: 80%
+    min-height: 3em
+    @include mixins.flex-center
+
+    .list-checkbox
+      margin-right: .5rem
+  
+  &-new-item
+    @include mixins.flex-center
+    min-width: 100%
+    min-height: 4.375em
+    justify-content: space-evenly
+    padding: 0.5em 0
+    margin-top: 1rem
+
+    input
+      font-size: 1.2rem
+      border: 2px solid variables.$text-color
+      border-radius: 5px
+      padding: 1em
+      min-width: 80%
