@@ -27,6 +27,8 @@ footer, header, hgroup, menu, nav, section {
 body {
   line-height: 1;
   box-sizing: border-box;
+  background-color: #000;
+  color: #777;
 }
 
 ol, ul {
@@ -46,51 +48,48 @@ table {
   border-spacing: 0;
 }
 
-.todo {
+.btn {
+  color: #102f5e;
+  border: 2px solid #102f5e;
+  padding: 0.3rem 0.6rem;
+  font-size: 1rem;
+  cursor: pointer;
   display: flex;
-  align-items: center;
   justify-content: center;
-  max-width: 73.125em;
-  padding: 1.5rem 0;
-  margin: 0 auto;
-  flex-direction: column;
-  gap: 1em;
+  align-items: center;
+  transition: 0.4s;
 }
-.todo-title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.btn:hover {
   background-color: #000;
+}
+.btn i {
+  color: #102f5e;
+  font-weight: bold;
+  pointer-events: none;
+}
+.btn i:hover {
   color: #fff;
-  min-width: 100%;
-  min-height: 3em;
-  font-size: 2rem;
 }
-.todo-list {
-  border: 2px solid #20c997;
-  font-size: 1.2rem;
-  min-width: 80%;
-  min-height: 3em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+.container {
+  max-width: 28.125em;
+  margin: 3rem auto;
+  padding: 1.5rem;
+  background-color: #fff;
+  border-radius: 15px;
 }
-.todo-new-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 100%;
-  min-height: 4.375em;
-  justify-content: space-evenly;
-  padding: 0.5em 0;
-  margin-top: 1rem;
+.container-header {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 0 1rem 1rem;
+  border-bottom: 1px solid #102f5e;
 }
-.todo-new-item input {
-  font-size: 1.2rem;
-  border: 2px solid #777;
-  border-radius: 5px;
-  padding: 1em;
-  min-width: 80%;
+.container #todo-form {
+  padding: 1rem;
+  border-bottom: 1px solid #102f5e;
+}
+.container #todo-form-control #form-input {
+  padding: 0.25rem 0.5rem;
 }
 
 /*# sourceMappingURL=app.css.map */

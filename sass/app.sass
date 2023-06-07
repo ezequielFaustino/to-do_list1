@@ -1,39 +1,25 @@
 @use 'reset'
 @use 'variables'
 @use 'mixins'
+@use 'buttons'
 
-.todo
-  @include mixins.flex-center
+.container
   @include mixins.container
-  flex-direction: column
-  gap: 1em
+  background-color: variables.$primary-color
+  border-radius: 15px
 
-  &-title
-    @include mixins.flex-center
-    background-color: variables.$bg-color
-    color: variables.$primary-color
-    min-width: 100%
-    min-height: 3em
-    font-size: 2rem
-  
-  &-list
-    border: 2px solid variables.$secondary-color
-    font-size: 1.2rem
-    min-width: 80%
-    min-height: 3em
-    @include mixins.flex-center
-  
-  &-new-item
-    @include mixins.flex-center
-    min-width: 100%
-    min-height: 4.375em
-    justify-content: space-evenly
-    padding: 0.5em 0
-    margin-top: 1rem
+  &-header
+    text-align: center
+    font-size: 1.5rem
+    padding: 0 1rem 1rem
+    border-bottom: 1px solid variables.$secondary-color
 
-    input
-      font-size: 1.2rem 
-      border: 2px solid variables.$text-color
-      border-radius: 5px
-      padding: 1em
-      min-width: 80%
+
+  #todo-form
+    padding: 1rem
+    border-bottom: 1px solid variables.$secondary-color
+
+    &-control
+      
+      #form-input
+        padding: .25rem .5rem

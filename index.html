@@ -1,31 +1,54 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>To-do List - Ezequiel</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Css do projeto -->
   <link rel="stylesheet" href="css/app.css">
 </head>
-<body>
-  <main>
-    <div class="todo">
-      <h1 class="todo-title">To-do List</h1>
 
-      <div class="todo-list" id="todoList">
-        <label class="todo-item">
-          <input type="checkbox" class="list-checkbox">
-          <div>Estudar estrutura de dados Javascript</div>
-          <button class="list-button">
-            X
-          </button>
-        </label>
+<body>
+  <div class="container">
+    <header class="container-header">
+      <h1>Todo Básico</h1>
+    </header>
+
+    <form id="todo-form">
+      <p id="todo-form-title">Adicione sua tarefa:</p>
+      <div class="todo-form-control">
+        <input type="text" id="form-input" placeholder="O que irá fazer?">
+        <button class="btn" type="submit">
+          <i class="fa-light fa-plus"></i>
+        </button>
+      </div>
+    </form>
+
+    <div id="todo">
+      <div class="todo-list">
+        <h3>Estou a fazer alguma coisa...</h3>
+        <button class="btn todo-finish-btn">
+          <i class="fa-solid fa-check"></i>
+        </button>
       </div>
 
-      <div class="todo-new-item" id="newItem">
-        <input type="text" placeholder="Digite a tarefa e pressione ENTER para adiciona-la">
+      <div class="todo-list">
+        <h3>Estudar Javascript...</h3>
+        <button class="btn todo-finish-btn">
+          <i class="fa-solid fa-check"></i>
+        </button>
       </div>
     </div>
-  </main>
+  </div>
+
+  <script src="js/script.js"></script>
 </body>
+
 </html>
