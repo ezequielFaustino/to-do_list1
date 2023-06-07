@@ -28,7 +28,7 @@ body {
   line-height: 1;
   box-sizing: border-box;
   background-color: #000;
-  color: #777;
+  color: #0A4650;
 }
 
 ol, ul {
@@ -49,8 +49,8 @@ table {
 }
 
 .btn {
-  color: #102f5e;
-  border: 2px solid #102f5e;
+  color: #0A4650;
+  border: 2px solid #9ED763;
   padding: 0.3rem 0.6rem;
   font-size: 1rem;
   cursor: pointer;
@@ -63,12 +63,9 @@ table {
   background-color: #000;
 }
 .btn i {
-  color: #102f5e;
+  color: #0A4650;
   font-weight: bold;
   pointer-events: none;
-}
-.btn i:hover {
-  color: #fff;
 }
 
 .container {
@@ -82,14 +79,45 @@ table {
   text-align: center;
   font-size: 1.5rem;
   padding: 0 1rem 1rem;
-  border-bottom: 1px solid #102f5e;
+  border-bottom: 1px solid #9ED763;
 }
 .container #todo-form {
   padding: 1rem;
-  border-bottom: 1px solid #102f5e;
+  border-bottom: 1px solid #9ED763;
 }
-.container #todo-form-control #form-input {
+.container #todo-form p {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+.container #todo-form .todo-form-control {
+  display: flex;
+}
+.container #todo-form .todo-form-control #form-input {
   padding: 0.25rem 0.5rem;
+  margin-right: 0.3rem;
+}
+.container #todo .todo-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #9ED763;
+  transition: 0.3s;
+}
+.container #todo .todo-list h3 {
+  flex: 1;
+  font-size: 0.9rem;
+}
+.container #todo .todo-list .todo-finish-btn {
+  margin-left: 0.4rem;
+}
+.container .done {
+  background-color: #FFF2B2;
+}
+.container .done h3 {
+  color: #2C9E4B;
+  text-decoration: line-through;
+  font-style: italic;
 }
 
 /*# sourceMappingURL=app.css.map */
