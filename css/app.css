@@ -48,6 +48,62 @@ table {
   border-spacing: 0;
 }
 
+.container {
+  max-width: 28.125em;
+  margin: 3rem auto;
+  padding: 1.5rem;
+  background-color: #fff;
+  border-radius: 15px;
+}
+.container-header {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 0 1rem 1rem;
+  border-bottom: 1px solid #9ED763;
+}
+
+#todo-form {
+  padding: 1rem;
+  border-bottom: 1px solid #9ED763;
+}
+#todo-form p {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+#todo-form .todo-form-control {
+  display: flex;
+}
+#todo-form .todo-form-control #form-input {
+  padding: 0.25rem 0.5rem;
+  margin-right: 0.3rem;
+}
+
+.todo-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #9ED763;
+  transition: 0.3s;
+}
+.todo-list h3 {
+  flex: 1;
+  font-size: 0.9rem;
+}
+.todo-list .todo-finish-btn {
+  margin-left: 0.4rem;
+}
+
+.done {
+  background-color: #FFF2B2;
+}
+
+h3 {
+  color: #2C9E4B;
+  text-decoration: line-through;
+  font-style: italic;
+}
+
 .btn {
   color: #0A4650;
   border: 2px solid #9ED763;
@@ -66,58 +122,6 @@ table {
   color: #0A4650;
   font-weight: bold;
   pointer-events: none;
-}
-
-.container {
-  max-width: 28.125em;
-  margin: 3rem auto;
-  padding: 1.5rem;
-  background-color: #fff;
-  border-radius: 15px;
-}
-.container-header {
-  text-align: center;
-  font-size: 1.5rem;
-  padding: 0 1rem 1rem;
-  border-bottom: 1px solid #9ED763;
-}
-.container #todo-form {
-  padding: 1rem;
-  border-bottom: 1px solid #9ED763;
-}
-.container #todo-form p {
-  margin-bottom: 0.5rem;
-  font-weight: bold;
-}
-.container #todo-form .todo-form-control {
-  display: flex;
-}
-.container #todo-form .todo-form-control #form-input {
-  padding: 0.25rem 0.5rem;
-  margin-right: 0.3rem;
-}
-.container #todo .todo-list {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 1rem;
-  border-bottom: 1px solid #9ED763;
-  transition: 0.3s;
-}
-.container #todo .todo-list h3 {
-  flex: 1;
-  font-size: 0.9rem;
-}
-.container #todo .todo-list .todo-finish-btn {
-  margin-left: 0.4rem;
-}
-.container .done {
-  background-color: #FFF2B2;
-}
-.container .done h3 {
-  color: #2C9E4B;
-  text-decoration: line-through;
-  font-style: italic;
 }
 
 /*# sourceMappingURL=app.css.map */
