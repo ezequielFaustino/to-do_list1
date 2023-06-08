@@ -97,8 +97,7 @@ table {
 .done {
   background-color: #FFF2B2;
 }
-
-h3 {
+.done h3 {
   color: #2C9E4B;
   text-decoration: line-through;
   font-style: italic;
